@@ -39,6 +39,9 @@ const gitFacts = (git_dir) => {
                 //we make localChanges true if that is the case
                 localChanges = true;
             }
+            else{
+                localChanges = false;
+            }
         }
         catch (error) {
             console.error(error);
